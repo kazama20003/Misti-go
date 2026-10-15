@@ -54,9 +54,9 @@ fun SettingsScreen(onOpenFamily: () -> Unit, onOpenPlan: () -> Unit) {
         Text("Lugares guardados", color = Ink, fontWeight = FontWeight.Bold, fontSize = 18.sp)
         Spacer(Modifier.height(10.dp))
         RumboCard(Modifier.fillMaxWidth(), padding = 8.dp) {
-            PlaceRow(Icons.Rounded.Home, "Casa", "Col. Las Flores, Calle 8")
+            PlaceRow(Icons.Rounded.Home, "Casa", "Cerro Colorado, Calle 8")
             Box(Modifier.padding(horizontal = 8.dp).fillMaxWidth().height(1.dp).background(HairLine))
-            PlaceRow(Icons.Rounded.Work, "Trabajo", "Torre Norte, Av. Reforma")
+            PlaceRow(Icons.Rounded.Work, "Trabajo", "Torre Forum, Av. Dolores")
         }
 
         Spacer(Modifier.height(16.dp))

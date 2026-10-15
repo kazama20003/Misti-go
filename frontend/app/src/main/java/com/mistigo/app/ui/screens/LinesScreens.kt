@@ -33,7 +33,7 @@ fun LinesScreen(onOpenLine: () -> Unit) {
     ) {
         Spacer(Modifier.height(6.dp))
         Text("34 buses en servicio", color = Muted, fontSize = 13.sp)
-        TwoToneTitle("Líneas de", "Ciudad Capital")
+        TwoToneTitle("Líneas de", "Arequipa")
         Spacer(Modifier.height(14.dp))
         Row(
             Modifier.fillMaxWidth().clip(RoundedCornerShape(16.dp)).background(CardWhite)
@@ -114,14 +114,14 @@ private enum class StopState { PASSED, HERE, AHEAD }
 @Composable
 fun LineLiveScreen(onBack: () -> Unit, onSchedules: () -> Unit, onCompany: () -> Unit) {
     val stops = listOf(
-        StopRow("Parque Colón", "Ya pasó", null, Muted, StopState.PASSED),
+        StopRow("Yanahuara", "Ya pasó", null, Muted, StopState.PASSED),
         StopRow("Catedral", "Bus aquí", null, Muted, StopState.HERE),
-        StopRow("Hospital General", "3 min", "Tráfico moderado", Warning, StopState.AHEAD),
-        StopRow("Universidad Central", "8 min", null, Muted, StopState.AHEAD),
-        StopRow("Estadio Municipal", "11 min", null, Muted, StopState.AHEAD),
-        StopRow("Plaza Sur", "14 min", "Tráfico moderado", Warning, StopState.AHEAD),
-        StopRow("Zona Norte", "19 min", "Tráfico denso", Danger, StopState.AHEAD),
-        StopRow("Aeropuerto", "26 min", null, Muted, StopState.AHEAD),
+        StopRow("Hospital Goyeneche", "3 min", "Tráfico moderado", Warning, StopState.AHEAD),
+        StopRow("UNSA", "8 min", null, Muted, StopState.AHEAD),
+        StopRow("Estadio Melgar", "11 min", null, Muted, StopState.AHEAD),
+        StopRow("Paucarpata", "14 min", "Tráfico moderado", Warning, StopState.AHEAD),
+        StopRow("Cerro Colorado", "19 min", "Tráfico denso", Danger, StopState.AHEAD),
+        StopRow("Aeropuerto R. Ballón", "26 min", null, Muted, StopState.AHEAD),
     )
     Column(
         Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp),
@@ -164,7 +164,7 @@ fun LineLiveScreen(onBack: () -> Unit, onSchedules: () -> Unit, onCompany: () ->
             ActionChip(Icons.Rounded.Schedule, "Horarios", "Por parada", Orange, OrangeSoft,
                 Modifier.weight(1f), onSchedules)
             ActionChip(null, "Empresa", "Ver operadora", LineC4, LineC4Soft,
-                Modifier.weight(1f), onCompany, badge = "CVN")
+                Modifier.weight(1f), onCompany, badge = "SOL")
         }
         Spacer(Modifier.height(18.dp))
         Row(verticalAlignment = Alignment.CenterVertically) {

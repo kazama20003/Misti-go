@@ -12,6 +12,10 @@ import androidx.compose.ui.unit.sp
 private val RumboColors = lightColorScheme(
     primary = Orange,
     onPrimary = Color(0xFFFFFFFF),
+    secondary = Blue,
+    onSecondary = Color(0xFFFFFFFF),
+    secondaryContainer = BlueSoft,
+    onSecondaryContainer = BlueDark,
     background = Cream,
     onBackground = Ink,
     surface = CardWhite,

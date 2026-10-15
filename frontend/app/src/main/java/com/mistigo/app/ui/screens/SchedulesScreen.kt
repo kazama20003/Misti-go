@@ -31,13 +31,13 @@ import com.mistigo.app.ui.theme.*
 fun SchedulesScreen(onBack: () -> Unit) {
     var line by remember { mutableStateOf("C4") }
     var day by remember { mutableStateOf("Lun – Vie") }
-    var stop by remember { mutableStateOf("Hospital General") }
+    var stop by remember { mutableStateOf("Hospital Goyeneche") }
     val lines = listOf("R12", "C4", "R7", "L3", "X1", "R20")
-    val stops = listOf("Parque Colón", "Catedral", "Hospital General", "Universidad")
+    val stops = listOf("Yanahuara", "Catedral", "Hospital Goyeneche", "Universidad")
     val mins = listOf(":06", ":16", ":26", ":36", ":46", ":56")
 
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
-        BackHeader(onBack, "Horarios oficiales · CVN", "Horario de la", line)
+        BackHeader(onBack, "Horarios oficiales · SOL", "Horario de la", line)
         Spacer(Modifier.height(14.dp))
         // Selector de línea
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -61,8 +61,8 @@ fun SchedulesScreen(onBack: () -> Unit) {
             }
             Spacer(Modifier.height(14.dp))
             Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                DirBox("Ida", "Hacia Aeropuerto", Modifier.weight(1f))
-                DirBox("Vuelta", "Hacia Parque Colón", Modifier.weight(1f))
+                DirBox("Ida", "Hacia Aeropuerto R. Ballón", Modifier.weight(1f))
+                DirBox("Vuelta", "Hacia Yanahuara", Modifier.weight(1f))
             }
             Spacer(Modifier.height(12.dp))
             Text("Parada", color = Muted, fontSize = 12.sp)

@@ -287,7 +287,7 @@ fun PlanActivatedScreen(onStart: () -> Unit, onSeePlan: () -> Unit) {
             Text("— — — —", color = Color(0xCCFFFFFF))
             Spacer(Modifier.height(12.dp))
             Text("¡Ya tienes", color = Color(0xFFFFFFFF), fontSize = 28.sp)
-            Text("Rumbo Plus!", color = Color(0xFFFFFFFF), fontWeight = FontWeight.Bold, fontSize = 28.sp)
+            Text("Misti Go Plus!", color = Color(0xFFFFFFFF), fontWeight = FontWeight.Bold, fontSize = 28.sp)
             Spacer(Modifier.height(12.dp))
             Text("Tu prueba gratis de 7 días termina el 21 oct. Te avisaremos antes y puedes cancelar cuando quieras.",
                 color = Color(0xE6FFFFFF), fontSize = 15.sp, lineHeight = 21.sp)

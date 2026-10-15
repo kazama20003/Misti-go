@@ -2,11 +2,17 @@ package com.mistigo.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// Marca Rumbo
+// Marca Misti Go — naranja + azul del Misti (Arequipa)
 val Orange = Color(0xFFE8541E)
 val OrangeDark = Color(0xFFD1430F)
 val OrangeLight = Color(0xFFF07A3E)
 val OrangeSoft = Color(0xFFFDEDE4)
+
+// Azul Misti (acento)
+val Blue = Color(0xFF1E5FA8)
+val BlueDark = Color(0xFF17487E)
+val BlueLight = Color(0xFF3C86D8)
+val BlueSoft = Color(0xFFDDE9F7)
 
 val Cream = Color(0xFFFAF9F5)
 val CardWhite = Color(0xFFFFFFFF)

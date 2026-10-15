@@ -108,7 +108,7 @@ fun TwoToneTitle(light: String, bold: String, modifier: Modifier = Modifier) {
         buildAnnotatedString {
             withStyle(SpanStyle(fontWeight = FontWeight.Normal, color = Ink)) { append(light) }
             append(" ")
-            withStyle(SpanStyle(fontWeight = FontWeight.Bold, color = Ink)) { append(bold) }
+            withStyle(SpanStyle(fontWeight = FontWeight.Bold, color = Blue)) { append(bold) }
         },
         fontSize = 26.sp,
         modifier = modifier,

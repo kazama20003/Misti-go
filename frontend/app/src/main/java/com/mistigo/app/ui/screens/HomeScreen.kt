@@ -76,7 +76,7 @@ fun HomeScreen(onOpen: (String) -> Unit) {
                     verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier.clickable { onOpen(Dest.CITIES) },
                 ) {
-                    Text("Ciudad Capital", color = Ink, fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
+                    Text("Arequipa", color = Ink, fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
                     Icon(Icons.Rounded.ExpandMore, null, tint = Ink, modifier = Modifier.size(18.dp))
                 }
             }
@@ -178,7 +178,7 @@ private fun NextBusCard(onClick: () -> Unit) {
         ) {
             InfoCol("Línea", "R12 Centro", Modifier.weight(1f))
             InfoCol("Llega en", "3 min", Modifier.weight(1f))
-            InfoCol("Parada", "Plaza Central", Modifier.weight(1f))
+            InfoCol("Parada", "Plaza de Armas", Modifier.weight(1f))
         }
     }
 }

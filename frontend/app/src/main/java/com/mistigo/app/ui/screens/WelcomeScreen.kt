@@ -37,7 +37,7 @@ fun WelcomeScreen(onStart: () -> Unit, onSkip: () -> Unit) {
     ) {
         Column(Modifier.fillMaxSize().systemBarsPadding()) {
             Spacer(Modifier.height(24.dp))
-            Text("Rumbo", color = Color(0xFFFFFFFF), fontSize = 34.sp, fontWeight = FontWeight.SemiBold)
+            Text("Misti Go", color = Color(0xFFFFFFFF), fontSize = 34.sp, fontWeight = FontWeight.SemiBold)
 
             Spacer(Modifier.weight(0.4f))
 
@@ -74,7 +74,7 @@ fun WelcomeScreen(onStart: () -> Unit, onSkip: () -> Unit) {
             )
             Spacer(Modifier.height(14.dp))
             Text(
-                "Rumbo encuentra tu parada, te dice qué bus tomar y te avisa justo antes de bajar.",
+                "Misti Go encuentra tu parada, te dice qué bus tomar y te avisa justo antes de bajar.",
                 color = Color(0xE6FFFFFF),
                 fontSize = 15.sp,
                 lineHeight = 21.sp,

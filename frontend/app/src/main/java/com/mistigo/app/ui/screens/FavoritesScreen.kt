@@ -40,7 +40,7 @@ fun FavoritesScreen(onBack: () -> Unit, onGo: () -> Unit) {
         Spacer(Modifier.height(14.dp))
         FavRow("Casa → Trabajo", "R12 + C4 · 26 min · Lun-Vie 7:30", onGo)
         Spacer(Modifier.height(10.dp))
-        FavRow("Casa → Universidad Central", "R7 · 34 min", onGo)
+        FavRow("Casa → UNSA", "R7 · 34 min", onGo)
     }
 }
 

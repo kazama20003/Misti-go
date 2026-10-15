@@ -34,8 +34,8 @@ fun WeeklyPlannerScreen(onBack: () -> Unit) {
                 Text("Llegar 8:00 al Trabajo", color = Muted, fontSize = 13.sp)
             }
             Spacer(Modifier.height(14.dp))
-            PlanStep(Orange, false, "7:14", "Te avisamos: prepárate", "Tráfico moderado en Av. Central", true)
-            PlanStep(Ink, true, "7:24", "Sal de casa", "Camina 3 min a Plaza Central", true)
+            PlanStep(Orange, false, "7:14", "Te avisamos: prepárate", "Tráfico moderado en Av. Ejército", true)
+            PlanStep(Ink, true, "7:24", "Sal de casa", "Camina 3 min a Plaza de Armas", true)
             PlanStep(Orange, false, "7:31", "Pasa tu R12", "Transbordo al C4 en Catedral", true)
             PlanStep(Success, true, "7:56", "Llegas al Trabajo", "4 min antes de tu hora", false)
         }

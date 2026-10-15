@@ -99,7 +99,7 @@ fun SecurityScreen(onBack: () -> Unit) {
             RumboSwitch(anon) { anon = !anon }
         }
         Spacer(Modifier.height(8.dp))
-        Text("Se adjunta: Unidad 2417 · Línea R12 · TUM · tu ubicación", color = Orange, fontSize = 12.sp)
+        Text("Se adjunta: Unidad 2417 · Línea R12 · HAG · tu ubicación", color = Orange, fontSize = 12.sp)
         Spacer(Modifier.height(12.dp))
         Box(
             Modifier.fillMaxWidth().clip(RoundedCornerShape(16.dp))

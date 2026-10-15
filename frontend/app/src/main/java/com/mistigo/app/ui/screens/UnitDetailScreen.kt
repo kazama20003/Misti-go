@@ -35,7 +35,7 @@ fun UnitDetailScreen(onBack: () -> Unit) {
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text("Línea ", color = Muted, fontSize = 12.sp)
-                Text("R12 · TUM", color = Ink, fontWeight = FontWeight.Bold, fontSize = 12.sp)
+                Text("R12 · HAG", color = Ink, fontWeight = FontWeight.Bold, fontSize = 12.sp)
             }
             Row(
                 Modifier.align(Alignment.TopEnd).padding(12.dp)
@@ -51,7 +51,7 @@ fun UnitDetailScreen(onBack: () -> Unit) {
             Box(
                 Modifier.align(Alignment.BottomStart).padding(12.dp)
                     .clip(RoundedCornerShape(8.dp)).background(CardWhite).padding(horizontal = 12.dp, vertical = 6.dp),
-            ) { Text("C 2417 TUM", color = Ink, fontWeight = FontWeight.Bold, fontSize = 13.sp) }
+            ) { Text("C 2417 HAG", color = Ink, fontWeight = FontWeight.Bold, fontSize = 13.sp) }
         }
         Spacer(Modifier.height(12.dp))
         RumboCard(Modifier.fillMaxWidth(), padding = 16.dp) {

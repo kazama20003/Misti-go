@@ -31,9 +31,9 @@ import com.mistigo.app.ui.theme.*
 @Composable
 fun IntercityScreen(onBack: () -> Unit) {
     var filter by remember { mutableStateOf("Todos") }
-    val filters = listOf("Todos", "Ciudad del Norte", "Puerto Sur", "Valle Alto")
+    val filters = listOf("Todos", "Lima", "Cusco", "Puno")
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
-        BackHeader(onBack, "Terminal de Buses · Ciudad Capital", "Viajes entre", "ciudades")
+        BackHeader(onBack, "Terminal Terrestre · Arequipa", "Viajes entre", "ciudades")
         Spacer(Modifier.height(14.dp))
         Row(
             Modifier.fillMaxWidth().clip(RoundedCornerShape(14.dp)).background(OrangeSoft).padding(14.dp),

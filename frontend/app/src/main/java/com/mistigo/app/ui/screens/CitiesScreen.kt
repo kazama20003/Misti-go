@@ -28,7 +28,7 @@ import com.mistigo.app.ui.theme.*
 @Composable
 fun CitiesScreen(onBack: () -> Unit, onPick: () -> Unit) {
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(16.dp)) {
-        BackHeader(onBack, "3 ciudades disponibles", "Elige tu", "ciudad")
+        BackHeader(onBack, "1 ciudad disponible · empezamos por Arequipa", "Elige tu", "ciudad")
         Spacer(Modifier.height(14.dp))
         InkButton("Detectar mi ciudad con el GPS", onClick = onPick, modifier = Modifier.fillMaxWidth(),
             leading = { Icon(Icons.Rounded.GpsFixed, null, tint = Color(0xFFFFFFFF), modifier = Modifier.size(18.dp)) })

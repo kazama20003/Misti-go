@@ -50,7 +50,7 @@ fun MapScreen(onBack: () -> Unit, onOpenTrip: () -> Unit) {
                 ) {
                     Icon(Icons.Rounded.Search, null, tint = Muted, modifier = Modifier.size(20.dp))
                     Spacer(Modifier.width(10.dp))
-                    Text("Av. Central", color = Ink, fontSize = 15.sp)
+                    Text("Av. Ejército", color = Ink, fontSize = 15.sp)
                 }
                 Spacer(Modifier.width(10.dp))
                 CircleIconButton(onClick = {}) {

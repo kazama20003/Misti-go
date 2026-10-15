@@ -64,8 +64,8 @@ fun SearchScreen(onBack: () -> Unit, onPick: () -> Unit) {
             Modifier.horizontalScroll(rememberScrollState()),
             horizontalArrangement = Arrangement.spacedBy(12.dp),
         ) {
-            PopularCard("Más buscado", "Hospital General", "26 min · R12 + C4", LineR12, onPick)
-            PopularCard("Compras", "Centro Comercial Pl…", "41 min · X1", LineX1, onPick)
+            PopularCard("Más buscado", "Hospital Goyeneche", "26 min · R12 + C4", LineR12, onPick)
+            PopularCard("Compras", "Mall Plaza Cay…", "41 min · X1", LineX1, onPick)
         }
 
         Spacer(Modifier.height(22.dp))

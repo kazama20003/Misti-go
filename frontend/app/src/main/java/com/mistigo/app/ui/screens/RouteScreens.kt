@@ -42,7 +42,7 @@ fun RouteOptionsScreen(onBack: () -> Unit, onStart: () -> Unit) {
                     ) {
                         Icon(Icons.Rounded.Search, null, tint = Muted, modifier = Modifier.size(20.dp))
                         Spacer(Modifier.width(10.dp))
-                        Text("Hospital General", color = Ink, fontSize = 15.sp)
+                        Text("Hospital Goyeneche", color = Ink, fontSize = 15.sp)
                     }
                     Spacer(Modifier.width(10.dp))
                     CircleIconButton(onClick = {}) {
@@ -73,7 +73,7 @@ fun RouteOptionsScreen(onBack: () -> Unit, onStart: () -> Unit) {
                 Icon(Icons.Rounded.FavoriteBorder, null, tint = Orange, modifier = Modifier.size(24.dp))
             }
             Row {
-                Text("Mi ubicación → Hospital General · ", color = Muted, fontSize = 13.sp)
+                Text("Mi ubicación → Hospital Goyeneche · ", color = Muted, fontSize = 13.sp)
                 Text("Salir ahora", color = Orange, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
             }
             Spacer(Modifier.height(12.dp))
@@ -89,7 +89,7 @@ fun RouteOptionsScreen(onBack: () -> Unit, onStart: () -> Unit) {
                 MiniStat("Sale en", "3 min", Modifier.weight(1f))
             }
             Spacer(Modifier.height(12.dp))
-            NoteRow(Icons.Rounded.DirectionsBus, "Tráfico denso en Av. Reforma (tramo del C4)",
+            NoteRow(Icons.Rounded.DirectionsBus, "Tráfico denso en Av. Dolores (tramo del C4)",
                 "+4 min", DangerSoft, Danger)
             Spacer(Modifier.height(8.dp))
             NoteRow(Icons.Rounded.SwapVert, "Evita el tráfico · R7 · 32 min · tráfico fluido",
@@ -187,14 +187,14 @@ fun LiveTripScreen(onBack: () -> Unit, onUnit: () -> Unit) {
             Box(
                 Modifier.align(Alignment.Center).padding(top = 40.dp)
                     .clip(RoundedCornerShape(10.dp)).background(Ink).padding(horizontal = 12.dp, vertical = 6.dp),
-            ) { Text("Hospital General", color = Color(0xFFFFFFFF), fontSize = 12.sp, fontWeight = FontWeight.SemiBold) }
+            ) { Text("Hospital Goyeneche", color = Color(0xFFFFFFFF), fontSize = 12.sp, fontWeight = FontWeight.SemiBold) }
         }
 
         Column(
             Modifier.fillMaxSize().clip(RoundedCornerShape(topStart = 26.dp, topEnd = 26.dp))
                 .background(CardWhite).verticalScroll(rememberScrollState()).padding(18.dp),
         ) {
-            Text("Llegas a Hospital General", color = Muted, fontSize = 13.sp)
+            Text("Llegas a Hospital Goyeneche", color = Muted, fontSize = 13.sp)
             Row(verticalAlignment = Alignment.Bottom) {
                 Text("a las ", color = Ink, fontSize = 24.sp)
                 Text("10:40", color = Ink, fontWeight = FontWeight.Bold, fontSize = 30.sp)
@@ -231,16 +231,16 @@ fun LiveTripScreen(onBack: () -> Unit, onUnit: () -> Unit) {
             ) {
                 Icon(Icons.Rounded.DirectionsBus, null, tint = Ink, modifier = Modifier.size(20.dp))
                 Spacer(Modifier.width(10.dp))
-                Text("Unidad 2417 · TUM", color = Ink, fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
+                Text("Unidad 2417 · HAG", color = Ink, fontWeight = FontWeight.SemiBold, fontSize = 14.sp)
                 Spacer(Modifier.weight(1f))
                 Text("Ver detalles ›", color = Orange, fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
             }
 
             Spacer(Modifier.height(16.dp))
-            TripStep(Ink, "Camina a Plaza Central", "250 m · 3 min", "10:14", true)
-            TripStep(LineR12, "R12 hacia Zona Norte", "4 paradas · bájate en Catedral · 12 min", "10:17", true)
+            TripStep(Ink, "Camina a Plaza de Armas", "250 m · 3 min", "10:14", true)
+            TripStep(LineR12, "R12 hacia Cerro Colorado", "4 paradas · bájate en Catedral · 12 min", "10:17", true)
             TripStep(Muted, "Transbordo al C4", "2 paradas · bájate en Hospital · 8 min", "10:29", true)
-            TripStep(Muted, "Llega a Hospital General", "180 m · 3 min", "10:37", false)
+            TripStep(Muted, "Llega a Hospital Goyeneche", "180 m · 3 min", "10:37", false)
 
             Spacer(Modifier.height(16.dp))
             Row(verticalAlignment = Alignment.CenterVertically) {
